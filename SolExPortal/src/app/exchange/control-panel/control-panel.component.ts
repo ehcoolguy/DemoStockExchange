@@ -31,7 +31,7 @@ export class ControlPanelComponent implements OnInit {
 
     console.log('Current User Level: ' + userLevel);
 
-    if (userLevel !== 'NOT_AVAILABLE') {
+    if (userLevel !== 'not_available') {
       const solaceVpn = userLevel;
       const solaceClientUserName = 'customer-' + userLevel;
       const solaceClientPassword = 'password';
