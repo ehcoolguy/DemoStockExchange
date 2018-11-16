@@ -1,0 +1,13 @@
+<div class="card border-warning mb-3" style="max-width: 99%;">
+  <div class="card-header">{{ TXT_PERF_SUMMARY_TITLE }}</div>
+  <div class="card-body">
+    {{ TXT_PERF_MATCHING_SPEED }} :: <strong id="ME_PERF_INFO">{{ this.nMatchingSpeed | number:'1.3-3' }}</strong> {{
+    TXT_UNIT_MSG_RATE }}<br />
+    {{ TXT_PERF_MATCHING_AMOUNT }} :: <strong id="ME_ORDER_TOTAL">{{ this.nMatcingAmount | number: '1.0-0'}}</strong>
+    {{TXT_UNIT_MSG_AMOUNT}}<br />
+    {{ TXT_PERF_MARKET_DATA_SPEED }} :: <strong id="DEVICE_MD_RATE">{{this.nMarketDataSpeed | number: '1.2-2' }}</strong>
+    {{TXT_UNIT_MSG_RATE}}<br />
+    {{ TXT_PERF_MARKET_DATA_BW }} :: <strong id="DEVICE_BW_USAGE">{{this.strMarketDataBw }}</strong>
+    {{TXT_UNIT_BW}}<br />
+  </div>
+</div>
